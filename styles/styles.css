@@ -53,6 +53,9 @@
 #navcol-1 ul{
   margin-left:68%;
 }
+nav .container a {
+  color:#000;
+}
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display:block;
@@ -111,10 +114,6 @@ margin-bottom:0;
 .clean-block {
   padding-bottom:50px;
 }
-
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display:block;
-}
 .hamburger{
   display: none;
 }
@@ -142,3 +141,23 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   font-size: 5em
 }
 
+/* PARKS CARDS */
+@media (min-width:576px) {
+  .clean-navbar.fixed-top + .page {
+    padding-top:5rem;
+  }
+}
+
+.clean-navbar.fixed-top + .page {
+  padding-top:62px;
+}
+.container {
+  width:100%;
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:auto;
+  margin-left:auto;
+}
+button{
+  color: yellow;
+}

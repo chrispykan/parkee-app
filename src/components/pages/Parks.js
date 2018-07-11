@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
- class TidbitForm extends Component {
+class Parks extends Component {
   render() {
     return (
       <div>
-        <h1>Tidbit Form</h1>
+        <h1>Parks</h1>
       </div>
     )
   }
 }
-export default TidbitForm;
+
+export default Parks;

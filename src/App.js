@@ -1,33 +1,60 @@
 import React, { Component } from 'react';
-import './App.css';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
-
-import Header from './components/layout/Header';
-import Home from './components/pages/Home';
-import Parks from './components/pages/Parks';
-import Park from './components/pages/Park';
-import Profile from './components/pages/Profile';
-import Map from './components/pages/Map';
-import Login from './components/auth/Login';
-// import LoginPage from './components/auth/LoginPage';
+import Header from './components/Header';
+import Home from './components/Home';
+import { history } from './_helpers';
+import { PrivateRoute } from './_components';
+import { HomePage } from './HomePage';
+import { LoginPage } from './LoginPage';
+import { RegisterPage } from './RegisterPage';
+import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import { alertActions } from './_actions';
+import { connect } from 'react-redux';
 
 class App extends Component {
+
+//   constructor(props) {
+//     super(props);
+
+//     const { dispatch } = this.props;
+//     history.listen((location, action) => {
+//         // clear alert on location change
+//         dispatch(alertActions.clear());
+//     });
+// }
+
   render() {
+    // const { alert } = this.props;
     return (
-      <Router>
-        <div className="App">
-          <Header />
-          <div className="container">
-          <Route exact path='/' exact={true} component={ Home } />
-          <Route exact path='/parks' exact={true} component={ Parks } />
-          <Route exact path='/park' exact={true} component={ Park } />
-          <Route exact path='/map' exact={true} component={ Map } />
-          <Route exact path='/profile' exact={true} component={ Profile } />
-          </div>
-        </div>
-      </Router>
+     
+     <div className="App">
+       
+
+<Router history={history}>
+    <div >
+      <Header />
+      <Switch>
+      <Route exact path='/' component={ Home } />
+      <PrivateRoute exact path="/parks" component={HomePage} />
+      <Route path="/login" component={LoginPage} />
+      <Route path="/register" component={RegisterPage} />
+
+      {/* <Route  path='/*' render={() => ( <Redirect to='/' />)} /> */}
+      </Switch>
+    </div>
+    </Router>
+    </div>
+
     );
   }
 }
 
+function mapStateToProps(state) {
+  const { alert } = state;
+  return {
+      alert
+  };
+}
+
+// const connectedApp = connect(mapStateToProps)(App);
+// export { connectedApp as App }; 
 export default App;

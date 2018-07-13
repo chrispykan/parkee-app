@@ -1,5 +1,190 @@
+
+/* NAVBAR */
+.clean-navbar.fixed-bottom, .clean-navbar.fixed-top {
+  box-shadow:0 0 15px rgba(0,0,0,.1);
+}
+
+@media (min-width:576px) {
+  .navbar {
+    padding-top:1.2rem;
+    padding-bottom:1.2rem;
+    
+  }
+}
+
+.fixed-bottom, .fixed-top {
+  position:fixed;
+  right:0;
+  left:0;
+  z-index:1030;
+}
+
+.fixed-top {
+  top:0;
+}
+
+.bg-white {
+  background-color:#fff!important;
+}
+
+@media (min-width:992px) {
+  .navbar-expand-lg {
+    -ms-flex-flow:row nowrap;
+    flex-flow:row nowrap;
+    -ms-flex-pack:start;
+    justify-content:flex-start;
+  }
+}
+
+.navbar, .navbar > .container, .navbar > .container-fluid {
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  -ms-flex-align:center;
+  align-items:center;
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+}
+.navbar {
+  position:relative;
+  padding:.5rem 1rem;
+}
+#navcol-1 ul{
+  margin-left:68%;
+}
+nav .container a {
+  color:#000;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display:block;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  margin:0;
+  /* font-family:Montserrat,sans-serif; */
+  font-family: 'Comfortaa', cursive;
+  font-size:1rem;
+  font-weight:400;
+  line-height:1.5;
+  color:#545454;
+  text-align:left;
+  /* background-color:red; */
+}
+
+html {
+  font-family:sans-serif;
+  line-height:1.15;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  -ms-overflow-style:scrollbar;
+  -webkit-tap-highlight-color:transparent;
+}
+
+
+
+/* FOOTER */
+.footer-copyright p{
+  text-align: center;
+margin-bottom:0;
+}
+/* LANDING PAGE */
+/* CAROUSEL */
+.container{
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.carousel-item img{
+  max-width: 100%;
+  max-height: 95vh;
+}
+.clean-block.slider {
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+}
+
+@media (min-width:576px) {
+  .clean-block {
+    padding-bottom:100px;
+  }
+}
+
+.clean-block {
+  padding-bottom:50px;
+}
+.hamburger{
+  display: none;
+}
+.carousel-content {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.hero-text {
+  text-align: center;
+  color: #fff;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid #fff;
+  padding: 8em 1em;
+  width: 40%;
+ background-color:rgba(140, 200, 125, .5);
+}
+.hero-text h1{
+  font-size: 5em
+}
+
+/* PARKS CARDS */
+@media (min-width:576px) {
+  .clean-navbar.fixed-top + .page {
+    padding-top:5rem;
+  }
+}
+
+.clean-navbar.fixed-top + .page {
+  padding-top:62px;
+}
+.container {
+  width:100%;
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:auto;
+  margin-left:auto;
+}
+.fa-heart{
+  font-size: 2em;
+  margin-left:1em;
+  color: #a2c9a1;
+}
+.fa-heart:focus{
+  color: #d14abb;
+}
+
+.cardFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.parksList{
+  width:80%;
+  margin:0 auto;
+  text-align: center;
+}
+.cardFooter Button {
+  background-color:rgba(140, 200, 125, .5);
+}
+.cardFooter Button:hover {
+  background-color:#a2c9a1;
+}
+.cardFooter Button a{
+  color:#545454;
 }

@@ -7,6 +7,7 @@ class Home extends Component {
       <div className="landingSection">
         <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
           <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
+          <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">
 
               <div className="carousel-item active">
@@ -27,8 +28,11 @@ class Home extends Component {
                 </div>
                 <img className="d-block w-100" src="./images/landBuena.jpg" alt="Third slide"/>
               </div>
+              
+            </div>
             </div>
           </div>
+          
         </div>
       </div>
 

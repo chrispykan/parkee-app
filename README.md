@@ -4,9 +4,7 @@ Project 3 - Parkee
 
 ## About:
 Parkee is a social website fo San Francisco park lovers aka Parkees.
-
 Parkees are able to share Tidbits (short posts) about their favourite parks in the city.
-
 Tidbits include ashort review of the park, interesting information about the park, tips on what to do in and around the park, best times to visit, arrange park gatherings with other parkees, alert other parkees of upcoming events, past incidents, etc in the park or the general area.
 
 ## Technologies Used:
@@ -19,6 +17,7 @@ frontend:
 - Redux-form v6.7
 - material-ui
 - React Bootstrap
+- Bootstrap
  
  backend:
  - Express.js

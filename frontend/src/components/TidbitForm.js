@@ -23,11 +23,11 @@ class TidbitForm extends Component {
   render () {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input
+        <textarea className="tidbit-field"
           onChange={this.handleChange}
           value={this.state.newTidbit}
-        />
-        <Button>Add Tidbit</Button>
+        /> <br></br>
+        <Button className="tidbit-field">Post Tidbit</Button>
       </form>
     )
   }

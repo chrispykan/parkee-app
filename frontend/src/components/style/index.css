@@ -160,7 +160,7 @@ margin-bottom:0;
   margin-left:auto;
 }
 .fa-heart{
-  font-size: 2em;
+  font-size: 1.8em;
   color: #545454;;
 }
 .fa-heart:hover{
@@ -192,4 +192,221 @@ margin-bottom:0;
 }
 .parksList h2{
   margin: 1em; 
+}
+
+@media (min-width:768px) {
+  .clean-block.clean-product .block-content {
+    padding:40px;
+  }
+}
+
+.clean-block.clean-product .block-content {
+  padding:20px;
+}
+
+.clean-block .block-content {
+  padding:40px;
+}
+
+.clean-block .block-content, .clean-block .content {
+  box-shadow:0 2px 10px rgba(0,0,0,.075);
+  background-color:#fff;
+}
+
+
+.clean-block.clean-product .park-info {
+  margin-bottom:50px;
+}
+.row {
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  margin-right:-15px;
+  margin-left:-15px;
+}
+
+@media (min-width:768px) {
+  .col-md-6 {
+    -ms-flex:0 0 50%;
+    flex:0 0 50%;
+    max-width:50%;
+  }
+}
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-auto {
+  position:relative;
+  width:100%;
+  min-height:1px;
+  padding-right:15px;
+  padding-left:15px;
+}
+
+.clean-block.clean-product .gallery {
+  padding:20px;
+  background-color:#f6f6f6;
+}
+
+.clean-block.clean-product .sp-wrap {
+  background:transparent;
+  border:none;
+  float:none;
+  max-width:100%;
+}
+
+@media screen and (max-width:400px) {
+  .sp-wrap {
+    margin:0 0 15px;
+  }
+}
+
+.sp-wrap {
+  display:none;
+  line-height:0;
+  font-size:0;
+  background:#eee;
+  position:relative;
+  margin:0 25px 15px 0;
+  float:left;
+  max-width:300px;
+}
+
+.sp-loading, .sp-wrap {
+  border:5px solid #eee;
+  border-radius:3px;
+}
+
+a:hover {
+  color:#0056b3;
+  text-decoration:underline;
+}
+
+a {
+  color:#007bff;
+  text-decoration:none;
+  background-color:transparent;
+  -webkit-text-decoration-skip:objects;
+}
+
+@media (min-width:768px) {
+  .col-md-6 {
+    -ms-flex:0 0 50%;
+    flex:0 0 50%;
+    max-width:50%;
+  }
+}
+.card-title{
+  color: #006BFF;
+}
+.h3, h3 {
+  font-size:1.75rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom:.5rem;
+  font-family:inherit;
+  font-weight:500;
+  line-height:1.2;
+  color:inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top:0;
+  margin-bottom:.5rem;
+}
+.clean-block.clean-product .park-info .info .rating {
+  color:#fec000;
+  padding-bottom:20px;
+  border-bottom:1px solid rgba(0,0,0,.1);
+}
+
+.clean-block.clean-product .park-info .info .rating img, .clean-block.clean-product .reviews .review-item .rating img, .clean-related-item .related-name .rating img {
+  width:18px;
+  margin-right:2px;
+}
+
+img {
+  vertical-align:middle;
+  border-style:none;
+}
+.clean-block.clean-product .park-info .info .summary {
+  border-top:1px solid rgba(0,0,0,.1);
+  padding-top:30px;
+}
+
+.clean-block.clean-product .park-info .info .summary p {
+  font-size:.9em;
+}
+
+p {
+  margin-top:0;
+  margin-bottom:1rem;
+}
+
+.tidbit-section {
+text-align: center;
+margin-top:1em;
+margin-bottom: 1em;
+}
+
+textarea{
+width:90%;
+height:15vh;
+border-radius:20px;
+margin-top: 1em;
+}
+
+ .tidbit-list{
+  
+  background-color:rgba(140, 200, 125, 0.5);
+  padding:2em;
+  font-size: 1.2em;
+  border-radius: 20px;
+}
+.tidbit-list span{
+  margin-top: 0.5em;
+}
+.tidbit-list Button{
+  margin-left:1em;
+}
+.think{
+  color: #134357;
+  font-size:1em;
+}
+ 
+.gallery img{
+  max-width: 80%;
+  vertical-align:middle;
+  border-style:none;
+}
+.rating img{
+  max-width: 1em;;
+}
+.block-content, .tidbit-list{
+  width:90%;
+   margin:0 auto;
+ 
+}
+.block-content{
+  border:solid #a2c9a1 2px;
+  padding: 3em;
+  border-radius: 20px;
+
+  
+}
+.summary{
+  font-size: 1.2em;
+}
+.points{
+  margin-top: 2.5em;
+
+}
+.points p{
+text-align: left;
+font-size:1em;
+}
+.signup-form, .singinin-form{
+  width:90%;
+  margin-left:35em;
+  margin-top:3em;
 }

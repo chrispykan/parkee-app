@@ -6,7 +6,7 @@ import TidbitForm from './TidbitForm'
   render() {
     return (
       <div className="tidbit-section">
-        <h1>Tidbits about this Park</h1>
+        <h2>Tidbits about this Park</h2>
           <Tidbits />
           <TidbitForm />
       </div>

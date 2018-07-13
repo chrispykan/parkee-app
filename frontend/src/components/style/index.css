@@ -354,6 +354,8 @@ width:90%;
 height:15vh;
 border-radius:20px;
 margin-top: 1em;
+padding:1em;
+font-size :1.2em;
 }
 
  .tidbit-list{
@@ -409,4 +411,7 @@ font-size:1em;
   width:90%;
   margin-left:35em;
   margin-top:3em;
+}
+textarea:focus {
+  outline-width: 0;
 }

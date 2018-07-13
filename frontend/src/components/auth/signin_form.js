@@ -22,7 +22,7 @@ class SigninForm extends Component {
     const {handleSubmit} = this.props
   
     return (
-      <div>
+      <div className="singinin-form">
         {this.renderAlert()}
         <h2>Sign In</h2>
 

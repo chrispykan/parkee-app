@@ -55,6 +55,7 @@ function tidbits (state = defaultState, action) {
     case 'DELETE_TIDBIT':
     return state.filter(tidbit => tidbit.id != action.id)
    
+
   }
 }
 

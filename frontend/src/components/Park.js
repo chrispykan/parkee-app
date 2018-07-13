@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
-import Tidbits from './Tidbits'
-import TidbitForm from './TidbitForm'
+import TidbitSection from './TidbitSection';
+import ParkSection from './ParkSection';
+
+
 
 class Park extends Component {
   render () {
     return (
-      <div className="tidbitSection">
-        <h1>Tidbits about this Park!</h1>
-        <TidbitForm />
-        <Tidbits />
+      <div className="park-page">
+        <ParkSection />
+        <TidbitSection />
       </div>
     )
   }

@@ -1,4 +1,5 @@
 import uuid from 'uuid';
+import {Button} from 'reactstrap';
 
 export function addTidbit (bit) {
   return {
@@ -6,7 +7,7 @@ export function addTidbit (bit) {
     tidbit: {
       id: uuid(),
       bit: bit,
-      opinion: false
+      opinion: " I think it's..." 
     }
   }
 }

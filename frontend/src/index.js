@@ -18,7 +18,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import './components/style/index.css';
 import Park from './components/Park';
 import configureStore from './configureStore'
-import Map from './components/Map';
+import MapPage from './components/Map';
 
 injectTapEventPlugin()
 
@@ -43,7 +43,7 @@ ReactDOM.render(
           <Route path="/signout" component={Signout}/>
           <Route path="/signup" component={Signup}/>
           <Route path="/parks" component={Parks}/>
-          <Route path="/map" component={Map}/>
+          <Route path="/map" component={MapPage}/>
           <PrivateRoute path="/park" component={Park}/>
         </div>
       </MuiThemeProvider>
